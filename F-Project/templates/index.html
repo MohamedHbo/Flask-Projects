@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>مرحبًا! يرجى تسجيل الدخول</h1>
+    <form action="{{ url_for('login') }}" method="POST">
+        <label for="username">اسم المستخدم:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">تسجيل الدخول</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تم تسجيل الدخول</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>مرحبًا {{ username }}! تم تسجيل دخولك بنجاح.</h1>
+    <a href="{{ url_for('logout') }}">تسجيل الخروج</a>
+</body>
+</html>
